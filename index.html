@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js" integrity="sha512-U4J4PbEJ2TMjFqPUSiKq7LLTHuEkPZVo0jl2fomi9pT7UAExh4xVi8KmoR7EfmyigH95aA68zpW7y3XzuoSurQ==" crossorigin="anonymous"></script>
+  <script src="./resizer.js"></script>
+  <script src='./bower_components/threex.keyboardstate/threex.keyboardstate.js'></script>
+  <title>THREE . JS CODE</title>
+  <style>
+    @font-face {
+      font-family: omniblack;
+      src: url("assets/omniblack-20112/HeavyWeightGamer-BLdl\ \(1\).ttf");
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #app {
+      background-color: rgb(22, 22, 22);
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <the-header>
+    <a id="plane">Plane</a>
+    <a id="figure">Figure</a>
+    <a id="cylinder">Cylinder</a>
+    <a id="cube">Cube</a>
+    <a id="sphere">Esphere</a>
+  </the-header>
+  <div id="app">
+    <!-- <my-line></my-line> -->
+    <my-texture></my-texture>
+    <!-- <my-model></my-model> -->
+  </div>
+  <script type="module" src="Line.js"></script>
+  <script type="module" src="./Models.js"></script>
+  <script type="module" src="./Texture.js"></script>
+  <script type="module" src="./Header.js"></script>
+  <script>
+    console.log(document.querySelector("the-header"));
+  </script>
+</body>
+</html>
